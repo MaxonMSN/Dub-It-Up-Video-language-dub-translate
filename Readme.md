@@ -1,81 +1,108 @@
-Dub It Up
-Dub It Up is a powerful video translation tool that automatically translates voice in any video into your chosen language, generating a complete transcript and word-level timing for every utterance. This makes dubbing, localization, and video accessibility effortless for creators, educators, and media professionals.
+# Special thanks for moral support adn ideation 
+Supporter and collaborator : Abhay0603 
+Github : https://github.com/abhay0603
+Supporter and collaborator  : Vineet K Bharti
+Github : https://github.com/vineet-phoenix
+***
 
-Table of Contents
-Features
+# Dub It Up
 
-Video Requirements
+Dub It Up is a video translation tool that automatically dubs the audio in your input video into your chosen language. It also generates word-level transcripts with timing, making your video accessible for localization, subtitles, and educational purposes.
 
-Installation
+***
 
-Usage
+## Features
 
-Demo
+- **Automatic Video Translation**
+  - Translate any spoken video to your desired language.
+- **Word-Level Transcription**
+  - Get a full transcript with word-by-word timing.
+- **Authentic Dubbing**
+  - Maintains the original emotion and pacing for natural dubbing results.
 
-Output
+***
 
-Contributing
+## Demo
 
-License
+> **Note:** Large video files in this repository are stored and managed using Git LFS due to GitHub’s file size restrictions.
+>
+> If you wish to download demo videos, please ensure you have Git LFS installed:
+>
+> ```bash
+> git lfs install
+> git lfs pull
+> ```
+>
+> The sample video is not viewable as raw/download in-browser due to its size, but is available after cloning and pulling with LFS.
 
-Features
-Automatic Video Translation:
-Translate any spoken video into your target language (supports multiple languages).
+***
 
-Word-Level Transcript:
-Generates a transcript with precise word timings.
+## Installation
 
-Authentic Dub:
-Maintains original emotional tone and pacing for natural dubbing.
-
-Large Video Support:
-Handles large video files using Git Large File Storage (LFS).
-
-Video Requirements
-Input videos should be in .mp4 format (other formats supported with ffmpeg).
-
-For videos larger than 100MB, this repository uses Git LFS to store and manage files. If you clone the repo and want the sample video, make sure you have Git LFS installed.
-
-Installation
-Clone this repository (with LFS):
-
-bash
+```bash
 git clone https://github.com/your-username/dub-it-up.git
-git lfs pull
+cd dub-it-up
+```
+
 Install dependencies:
+Dependecies are already setted in the code lines , justvrun them chronologically.
 
-bash
-pip install -r requirements.txt
-Required libraries: gradio, requests, edge-tts, pydub, faster-whisper, transformers, sentencepiece, torch, torchaudio (see requirements.txt).
+***
 
-Usage
-Run the dubbing program:
+## Usage
 
-bash
+Run video dubbing and transcription:
+
+```bash
 python dub_it_up.py --input input_video.mp4 --lang target_language
-Replace input_video.mp4 with your video file and target_language (e.g., hi for Hindi, es for Spanish).
+```
+- `--input` : Path to your video file (must reside in the repository folder or be copied there).
+- `--lang` : Output language code (e.g., `en` for English, `hi` for Hindi).
 
-Output:
+**Output:**
+- Translated/dubbed video
+- Word-level transcript (TXT/JSON)
 
-Translated video file (dubbed in your chosen language).
+***
 
-Word-level transcript (TXT or JSON).
+## Example
 
-Demo
-Due to file size limits, the sample video is stored with Git LFS.
-You may not be able to preview it directly on GitHub, but you can download and run it locally after cloning.
+```bash
+python dub_it_up.py --input demo_video.mp4 --lang hi
+```
 
-Output
-Dubbed Video: Video file in the target language.
+***
 
-Transcript: Word-wise transcript with timings.
+## Output
 
-Examples: Sample input/output files provided (via Git LFS).
+- **Dubbed Video:** Video file with audio translated into your chosen language
+- **Transcript:** Word-level transcript file with timestamps
+- **Sample Files:** Samples included via Git LFS
 
-Contributing
-Pull requests are welcome! For major changes, please open an issue first to discuss what you would like to change.
+***
 
-License
-Distributed under the MIT License. See LICENSE for more information.
+## Contributing
 
-Created by [Your Name/Handle], 2025
+Pull requests are welcome!  
+For major changes, please open an issue first to discuss proposed modifications.
+
+***
+
+## License
+
+Distributed under the MIT License.  
+See `LICENSE` for more information.
+
+***
+
+## Acknowledgements
+
+- [Gradio](https://gradio.app)
+- [Faster-Whisper](https://github.com/SYSTRAN/faster-whisper)
+- [Edge-TTS](https://github.com/ranyelhousieny/edge-tts)
+- [Transformers](https://github.com/huggingface/transformers)
+- [Git Large File Storage](https://git-lfs.com)
+
+***
+
+Feel free to copy, customize, and add badges or links to your documentation, issues, or website. This will ensure your GitHub README looks professional, easy-to-read, and complete for users and contributors.
