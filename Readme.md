@@ -1,4 +1,4 @@
-# Special thanks for moral support adn ideation 
+# Special thanks for moral support and ideation 
 Supporter and collaborator : Abhay0603 
 
 Github : https://github.com/abhay0603
@@ -37,7 +37,7 @@ Dub It Up is a video translation tool that automatically dubs the audio in your 
 > ```
 >
 > The sample video is not viewable as raw/download in-browser due to its size, but is available after cloning and pulling with LFS.
-
+> Demo video link : https://drive.google.com/file/d/1-O_TRq0vx3rZT1wLPaF2O3DR9ZTHOBPw/view?usp=sharing
 ***
 
 ## Installation
