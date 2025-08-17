@@ -1,8 +1,10 @@
 # Special thanks for moral support adn ideation 
 Supporter and collaborator : Abhay0603 
+
 Github : https://github.com/abhay0603
 
 Supporter and collaborator  : Vineet K Bharti
+
 Github : https://github.com/vineet-phoenix
 ***
 
